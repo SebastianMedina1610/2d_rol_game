@@ -6,7 +6,7 @@ import java.awt.Dimension;
 
 import javax.swing.JFrame;
 
-public class game extends Canvas implements Runnable {
+public class Game extends Canvas implements Runnable {
 
 	private static final long serialVersionUID = 1L;
 
@@ -23,7 +23,7 @@ public class game extends Canvas implements Runnable {
 	private static JFrame window;
 	private static Thread thread;
 
-	private game() {
+	public Game() {
 		setPreferredSize(new Dimension(WIDTH, HEIGHT));
 
 		window = new JFrame(NAME);
@@ -36,12 +36,7 @@ public class game extends Canvas implements Runnable {
 		window.setVisible(true);
 	}
 
-	public static void main(String[] args) {
-		game Game = new game();
-		Game.start();
-	}
-
-	private synchronized void start() {
+	public synchronized void start() {
 		working = true;
 
 		thread = new Thread(this, "Graphics");
