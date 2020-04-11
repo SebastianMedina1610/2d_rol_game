@@ -21,7 +21,6 @@ public final class Keyboard implements KeyListener{
 	} 
 
 	public void keyPressed(KeyEvent e) {
-		System.out.println(e.getKeyCode());
 		keys[e.getKeyCode()] = true;
 	}
 
