@@ -26,7 +26,7 @@ public class Game extends Canvas implements Runnable {
 	private static Thread thread;
 	private static Keyboard keyboard;
 
-	private Game() {
+	public Game() {
 		setPreferredSize(new Dimension(WIDTH, HEIGHT));
 		
 		keyboard = new Keyboard();
@@ -47,7 +47,7 @@ public class Game extends Canvas implements Runnable {
 		Game.start();
 	}
 
-	private synchronized void start() {
+	public synchronized void start() {
 		working = true;
 
 		thread = new Thread(this, "Graphics");

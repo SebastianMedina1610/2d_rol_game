@@ -21,7 +21,7 @@
             "type": "java",
             "name": "Debug (Launch)-Main<game>",
             "request": "launch",
-            "mainClass": "src.game.Game",
+            "mainClass": "Main",
             "projectName": "game"
         },
         {
