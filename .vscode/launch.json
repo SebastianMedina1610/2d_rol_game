@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Game",
+            "request": "launch",
+            "mainClass": "game.Game",
+            "projectName": "game"
+        },
+        {
+            "type": "java",
             "name": "Debug (Launch) - Current File",
             "request": "launch",
             "mainClass": "${file}"
@@ -14,7 +21,7 @@
             "type": "java",
             "name": "Debug (Launch)-Main<game>",
             "request": "launch",
-            "mainClass": "Main",
+            "mainClass": "src.game.Game",
             "projectName": "game"
         },
         {
